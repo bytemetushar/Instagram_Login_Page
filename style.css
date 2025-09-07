@@ -1,0 +1,280 @@
+/* Instagram-like Login Page CSS */
+body {
+  background: #fafafa;
+  /* font-family: 'Segoe UI', Arial, sans-serif; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Freight Sans', cursive, Arial, sans-serif;
+  font-size: 2.5rem;
+  color: #262626;
+  margin-bottom: 2rem;
+  /* letter-spacing: 2px; */
+}
+
+form {
+  /* background: #fff; */
+  /* border: 1px solid #dbdbdb; */
+  /* border-radius: 8px; */
+  /* padding: 2rem 2.5rem 1.5rem 2.5rem; */
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.04); */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 69vw;
+  /* -webkit-border-radius: 8px; */
+  /* -moz-border-radius: 8px; */
+  /* -ms-border-radius: 8px; */
+  /* -o-border-radius: 8px; */
+}
+
+label {
+  color: #8e8e8e;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 0.7rem 0.9rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1.5px solid #a5a5a5;
+}
+
+button[type="submit"] {
+  background: #0095f6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #1877f2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fafafa;
+  gap: 40px;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mockup-images {
+  position: relative;
+  width: 320px;
+  height: 430px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.img-placeholder {
+  position: absolute;
+  border-radius: 30px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  background: #e0e0e0;
+}
+.img1 {
+  left: 0;
+  top: 40px;
+  width: 110px;
+  height: 320px;
+  z-index: 1;
+  transform: rotate(-12deg);
+}
+.img2 {
+  left: 60px;
+  top: 0;
+  width: 200px;
+  height: 400px;
+  z-index: 2;
+  transform: rotate(0deg);
+}
+.img3 {
+  left: 180px;
+  top: 60px;
+  width: 110px;
+  height: 320px;
+  z-index: 1;
+  transform: rotate(12deg);
+}
+
+.login-section {
+  /* background: #fff; */
+  /* border: 1px solid #dbdbdb; */
+  /* border-radius: 8px; */
+  padding: 40px 40px 24px 40px;
+  min-width: 350px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.insta-logo {
+  font-family: 'Grand Hotel', cursive, Arial, sans-serif;
+  font-size: 3rem;
+  color: #262626;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 0.8rem 0.9rem;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 0;
+  transition: border 0.2s;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border: 1.5px solid #a5a5a5;
+}
+.login-form button[type="submit"] {
+  background: #8ab4f8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.login-form button[type="submit"]:hover {
+  background: #1877f2;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 18px 0 10px 0;
+  width: 100%;
+}
+.divider .line {
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+.divider .or {
+  margin: 0 18px;
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.fb-login {
+  background: none;
+  color: #1877f2;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.forgot {
+  color: #00376b;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+}
+.signup-box {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 1rem;
+}
+.signup-box a {
+  color: #1877f2;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-section {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+    .container {
+    flex-direction: column;
+    padding: 0 4vw;
+  }
+  .image-section {
+    display: none;
+  }
+  .login-section {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 18px 4px 12px 4px;
+  }
+  .mockup-images {
+    width: 220px;
+    height: 280px;
+  }
+  .img1, .img2, .img3 {
+    border-radius: 18px;
+  }
+  .img1, .img3 {
+    width: 60px;
+    height: 160px;
+  }
+  .img2 {
+    width: 120px;
+    height: 200px;
+  }
+  .insta-logo {
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
